@@ -1,0 +1,21 @@
+,Fecha Salida,Hora Salida,Fecha Llegada,Hora Llegada,Origen,Destino,Duración,Escalas,Aerolínea,Precio,Fecha Captura
+0,2024-11-15,08:55:00,2024-11-15,10:15:00,Madrid,London Gatwick,140,0,Iberia Express,458.08,2024-10-19
+1,2024-11-18,15:20:00,2024-11-18,22:50:00,London Gatwick,Madrid,390,1,easyJet,458.08,2024-10-19
+2,2024-11-15,17:30:00,2024-11-15,18:50:00,Madrid,London Gatwick,140,0,Iberia Express,433.12,2024-10-19
+3,2024-11-18,15:20:00,2024-11-18,22:50:00,London Gatwick,Madrid,390,1,easyJet,433.12,2024-10-19
+4,2024-11-15,08:55:00,2024-11-15,10:15:00,Madrid,London Gatwick,140,0,Iberia Express,452.46,2024-10-19
+5,2024-11-18,14:55:00,2024-11-18,22:50:00,London Gatwick,Madrid,415,1,Vueling Airlines,452.46,2024-10-19
+6,2024-11-15,17:30:00,2024-11-15,18:50:00,Madrid,London Gatwick,140,0,Iberia Express,427.5,2024-10-19
+7,2024-11-18,14:55:00,2024-11-18,22:50:00,London Gatwick,Madrid,415,1,Vueling Airlines,427.5,2024-10-19
+8,2024-11-15,12:50:00,2024-11-15,20:20:00,Madrid,London Gatwick,510,1,Ryanair,365.9,2024-10-19
+9,2024-11-18,14:55:00,2024-11-18,22:50:00,London Gatwick,Madrid,415,1,Vueling Airlines,365.9,2024-10-19
+10,2024-11-15,12:50:00,2024-11-15,20:20:00,Madrid,London Gatwick,510,1,Ryanair,371.52,2024-10-19
+11,2024-11-18,15:20:00,2024-11-18,22:50:00,London Gatwick,Madrid,390,1,easyJet,371.52,2024-10-19
+12,2024-11-15,08:55:00,2024-11-15,10:15:00,Madrid,London Gatwick,140,0,Iberia Express,545.38,2024-10-19
+13,2024-11-18,09:05:00,2024-11-18,19:30:00,London Gatwick,Madrid,565,1,Wizz Air Malta,545.38,2024-10-19
+14,2024-11-15,08:55:00,2024-11-15,10:15:00,Madrid,London Gatwick,140,0,Iberia Express,575.73,2024-10-19
+15,2024-11-18,09:20:00,2024-11-18,19:30:00,London Gatwick,Madrid,550,1,Vueling Airlines,575.73,2024-10-19
+16,2024-11-15,09:40:00,2024-11-15,20:20:00,Madrid,London Gatwick,700,1,Wizz Air Malta,391.14,2024-10-19
+17,2024-11-18,14:55:00,2024-11-18,22:50:00,London Gatwick,Madrid,415,1,Vueling Airlines,391.14,2024-10-19
+18,2024-11-15,09:40:00,2024-11-15,20:20:00,Madrid,London Gatwick,700,1,Wizz Air Malta,396.76,2024-10-19
+19,2024-11-18,15:20:00,2024-11-18,22:50:00,London Gatwick,Madrid,390,1,easyJet,396.76,2024-10-19

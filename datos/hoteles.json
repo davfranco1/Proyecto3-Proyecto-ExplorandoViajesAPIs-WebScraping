@@ -1,0 +1,1011 @@
+[
+    {
+        "mainPhotoId": 484047964,
+        "accuratePropertyClass": 3,
+        "name": "Hampton By Hilton London Docklands",
+        "checkinDate": "2024-10-22",
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/484047964.jpg?k=3b50078ac452078af2e52ccea5c39dae24a4f4089ca1fb170ea180f289a2b794&o="
+        ],
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 0,
+        "longitude": 0.0413260000000264,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.3,
+        "propertyClass": 3,
+        "id": 2179715,
+        "wishlistName": "Londres",
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "taxExceptions": [],
+            "grossPrice": {
+                "value": 394.1747728833,
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0394"
+            }
+        },
+        "isPreferred": true,
+        "reviewCount": 6012,
+        "latitude": 51.507734,
+        "optOutFromGalleryChanges": 0,
+        "blockIds": [
+            "217971504_291367327_2_1_0"
+        ],
+        "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+        },
+        "countryCode": "gb",
+        "position": 20,
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+        },
+        "qualityClass": 0
+    },
+    {
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "07:00"
+        },
+        "reviewCount": 7998,
+        "optOutFromGalleryChanges": 0,
+        "latitude": 51.5160885800529,
+        "blockIds": [
+            "67350301_400977254_0_42_0"
+        ],
+        "position": 21,
+        "countryCode": "gb",
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "23:00"
+        },
+        "propertyClass": 3,
+        "id": 673503,
+        "longitude": -0.0677423364686547,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.1,
+        "priceBreakdown": {
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0499",
+                "value": 498.8149734888
+            },
+            "strikethroughPrice": {
+                "value": 692.79857429,
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0693"
+            },
+            "taxExceptions": [],
+            "benefitBadges": [
+                {
+                    "text": "Precio solo para m\u00f3vil",
+                    "explanation": "Precio solo para m\u00f3vil",
+                    "variant": "constructive",
+                    "identifier": "Mobile Rate"
+                }
+            ]
+        },
+        "isPreferred": true,
+        "wishlistName": "Londres",
+        "currency": "GBP",
+        "ufi": -2601889,
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 1,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/95765235.jpg?k=56e4edb38ac3df3271fa1a5ab76b42a55996e2daf88e0023ebe05dd68127162c&o="
+        ],
+        "mainPhotoId": 95765235,
+        "accuratePropertyClass": 3,
+        "name": "The Corner London City",
+        "checkinDate": "2024-10-22"
+    },
+    {
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        },
+        "blockIds": [
+            "134121401_91477058_2_33_0"
+        ],
+        "optOutFromGalleryChanges": 1,
+        "latitude": 51.508232,
+        "reviewCount": 5410,
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+        },
+        "position": 22,
+        "countryCode": "gb",
+        "id": 1341214,
+        "propertyClass": 3,
+        "reviewScore": 8.1,
+        "checkoutDate": "2024-10-25",
+        "longitude": 0.043758,
+        "isPreferred": true,
+        "priceBreakdown": {
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0397",
+                "value": 397.0084031005
+            },
+            "taxExceptions": [],
+            "benefitBadges": []
+        },
+        "wishlistName": "Londres",
+        "currency": "GBP",
+        "ufi": -2601889,
+        "rankingPosition": 2,
+        "reviewScoreWord": "Muy bien",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/576831101.jpg?k=664f51f9d48a5d8616fefc188edf4ed5b507730c47d791e573221cd4920178c8&o="
+        ],
+        "name": "Holiday Inn Express London - ExCel, an IHG Hotel",
+        "accuratePropertyClass": 3,
+        "mainPhotoId": 576831101,
+        "checkinDate": "2024-10-22"
+    },
+    {
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+        },
+        "qualityClass": 0,
+        "countryCode": "gb",
+        "position": 23,
+        "blockIds": [
+            "1198713004_392167312_3_0_0_407133"
+        ],
+        "optOutFromGalleryChanges": 0,
+        "latitude": 51.5281251,
+        "reviewCount": 61,
+        "checkout": {
+            "fromTime": "08:00",
+            "untilTime": "11:00"
+        },
+        "wishlistName": "Londres",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0396",
+                "value": 396.2279541
+            },
+            "taxExceptions": [],
+            "strikethroughPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0720",
+                "value": 720.414462
+            }
+        },
+        "reviewScore": 8,
+        "checkoutDate": "2024-10-25",
+        "longitude": -0.2011931,
+        "id": 11987130,
+        "propertyClass": 5,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/552281863.jpg?k=b78ac86ec9e12e9cb37ab12442972648a5095624af7b77fc7df351c7485872e3&o="
+        ],
+        "rankingPosition": 3,
+        "reviewScoreWord": "Muy bien",
+        "ufi": -2601889,
+        "currency": "GBP",
+        "checkinDate": "2024-10-22",
+        "name": "Westminster Inn",
+        "mainPhotoId": 552281863,
+        "accuratePropertyClass": 5
+    },
+    {
+        "isPreferred": true,
+        "priceBreakdown": {
+            "strikethroughPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0389",
+                "value": 389.02380948
+            },
+            "taxExceptions": [],
+            "grossPrice": {
+                "amountRounded": "\u20ac\u00a0342",
+                "currency": "EUR",
+                "value": 342.3409523424
+            },
+            "benefitBadges": [
+                {
+                    "variant": "constructive",
+                    "identifier": "Mobile Rate",
+                    "text": "Precio solo para m\u00f3vil",
+                    "explanation": "Precio solo para m\u00f3vil"
+                }
+            ]
+        },
+        "wishlistName": "Londres",
+        "id": 8357761,
+        "propertyClass": 0,
+        "reviewScore": 7.1,
+        "checkoutDate": "2024-10-25",
+        "longitude": -0.192189,
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "20:00"
+        },
+        "qualityClass": 0,
+        "position": 24,
+        "countryCode": "gb",
+        "checkout": {
+            "fromTime": "04:00",
+            "untilTime": "11:00"
+        },
+        "blockIds": [
+            "835776102_349005449_0_0_0"
+        ],
+        "latitude": 51.4918304,
+        "optOutFromGalleryChanges": 0,
+        "reviewCount": 1401,
+        "checkinDate": "2024-10-22",
+        "name": "205 Earls Court Rooms",
+        "accuratePropertyClass": 0,
+        "mainPhotoId": 363875556,
+        "rankingPosition": 4,
+        "reviewScoreWord": "Bien",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/363875556.jpg?k=2c658a251d60f7234819fb73f7c16e2ceb950ed99d901538374c87865718b013&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889
+    },
+    {
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 7.7,
+        "longitude": -0.193363130092621,
+        "id": 110318,
+        "propertyClass": 3,
+        "wishlistName": "Londres",
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0445",
+                "value": 445.216137516
+            },
+            "taxExceptions": [],
+            "strikethroughPrice": {
+                "amountRounded": "\u20ac\u00a0495",
+                "currency": "EUR",
+                "value": 494.68459724
+            }
+        },
+        "isPreferred": true,
+        "optOutFromGalleryChanges": 0,
+        "latitude": 51.4909298821687,
+        "blockIds": [
+            "11031803_327252977_0_2_0"
+        ],
+        "reviewCount": 1161,
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        },
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "22:00"
+        },
+        "countryCode": "gb",
+        "position": 25,
+        "mainPhotoId": 189741924,
+        "accuratePropertyClass": 3,
+        "name": "London Town Hotel",
+        "checkinDate": "2024-10-22",
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/189741924.jpg?k=0dc47ae14d2ca3ed0d563918eb925c9f085008d3847c8888c9c624700c60546a&o="
+        ],
+        "rankingPosition": 5,
+        "reviewScoreWord": "Bien"
+    },
+    {
+        "position": 26,
+        "countryCode": "gb",
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+        },
+        "qualityClass": 0,
+        "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "12:00"
+        },
+        "reviewCount": 4010,
+        "latitude": 51.52754518,
+        "optOutFromGalleryChanges": 0,
+        "blockIds": [
+            "615554002_326142089_2_41_0"
+        ],
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "taxExceptions": [],
+            "grossPrice": {
+                "amountRounded": "\u20ac\u00a0463",
+                "currency": "EUR",
+                "value": 462.6501674964
+            }
+        },
+        "isPreferred": true,
+        "wishlistName": "Londres",
+        "propertyClass": 3,
+        "id": 6155540,
+        "longitude": -0.286011816,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.2,
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 6,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/484051068.jpg?k=59635fbc68ca4753f7770147182f0d59158128058230d304f0a51420da5fe043&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889,
+        "checkinDate": "2024-10-22",
+        "mainPhotoId": 484051068,
+        "accuratePropertyClass": 3,
+        "name": "Hampton by Hilton London Park Royal"
+    },
+    {
+        "reviewCount": 1131,
+        "blockIds": [
+            "534425202_189214252_2_0_0"
+        ],
+        "latitude": 51.543177,
+        "optOutFromGalleryChanges": 0,
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "06:00"
+        },
+        "countryCode": "gb",
+        "position": 27,
+        "qualityClass": 3,
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "23:00"
+        },
+        "longitude": -0.194396,
+        "reviewScore": 7.5,
+        "checkoutDate": "2024-10-25",
+        "propertyClass": 0,
+        "id": 5344252,
+        "wishlistName": "Londres",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [
+                {
+                    "explanation": "Precio solo para m\u00f3vil",
+                    "text": "Precio solo para m\u00f3vil",
+                    "variant": "constructive",
+                    "identifier": "Mobile Rate"
+                }
+            ],
+            "grossPrice": {
+                "value": 327.428372979,
+                "amountRounded": "\u20ac\u00a0327",
+                "currency": "EUR"
+            },
+            "taxExceptions": [],
+            "strikethroughPrice": {
+                "value": 363.80930331,
+                "amountRounded": "\u20ac\u00a0364",
+                "currency": "EUR"
+            }
+        },
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/211536526.jpg?k=c27139463ac7ad79e63f46082278d1201db6b2ee9333518bd93fc0b884fcaf7d&o="
+        ],
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 7,
+        "name": "Messina Studios",
+        "mainPhotoId": 211536526,
+        "accuratePropertyClass": 0,
+        "checkinDate": "2024-10-22"
+    },
+    {
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/336395123.jpg?k=9f37596087a3bd72193a1a35dab8b003a3f99bb7ef05e3a91976221f5bd127db&o="
+        ],
+        "rankingPosition": 8,
+        "reviewScoreWord": "Agradable",
+        "name": "Generator London",
+        "mainPhotoId": 336395123,
+        "accuratePropertyClass": 3,
+        "checkinDate": "2024-10-22",
+        "blockIds": [
+            "29131_139595433_0_2_0"
+        ],
+        "optOutFromGalleryChanges": 0,
+        "latitude": 51.5259239604913,
+        "reviewCount": 11085,
+        "checkout": {
+            "untilTime": "10:00",
+            "fromTime": "00:00"
+        },
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "00:00"
+        },
+        "countryCode": "gb",
+        "position": 28,
+        "reviewScore": 6.9,
+        "checkoutDate": "2024-10-25",
+        "longitude": -0.124760270118713,
+        "id": 127230,
+        "propertyClass": 3,
+        "wishlistName": "Londres",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [
+                {
+                    "text": "Precio solo para m\u00f3vil",
+                    "explanation": "Precio solo para m\u00f3vil",
+                    "variant": "constructive",
+                    "identifier": "Mobile Rate"
+                }
+            ],
+            "grossPrice": {
+                "value": 315.8897346793,
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0316"
+            },
+            "taxExceptions": [],
+            "strikethroughPrice": {
+                "value": 350.9859258864,
+                "amountRounded": "\u20ac\u00a0351",
+                "currency": "EUR"
+            }
+        }
+    },
+    {
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 9,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/264477911.jpg?k=67192a75ef0c971741842071957f3e0a733d3466e6c5dfc6481ad6fd53cc8ce1&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889,
+        "checkinDate": "2024-10-22",
+        "mainPhotoId": 264477911,
+        "accuratePropertyClass": 0,
+        "name": "Snoozebox Olympic Park",
+        "countryCode": "gb",
+        "position": 29,
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "15:00",
+            "untilTime": "00:00"
+        },
+        "checkout": {
+            "fromTime": "03:00",
+            "untilTime": "11:00"
+        },
+        "reviewCount": 9396,
+        "latitude": 51.533788,
+        "optOutFromGalleryChanges": 0,
+        "blockIds": [
+            "595553002_233651134_0_2_0"
+        ],
+        "priceBreakdown": {
+            "grossPrice": {
+                "value": 273.3852814213,
+                "amountRounded": "\u20ac\u00a0273",
+                "currency": "EUR"
+            },
+            "taxExceptions": [],
+            "benefitBadges": []
+        },
+        "isPreferred": true,
+        "wishlistName": "Londres",
+        "propertyClass": 0,
+        "id": 5955530,
+        "longitude": -0.01359,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8
+    },
+    {
+        "currency": "GBP",
+        "ufi": -2601889,
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 10,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/264954573.jpg?k=cc142863fb48a6be495f4776c40cd3ad5262446821132b6b4223b890e0be437c&o="
+        ],
+        "name": "Vilenza Hotel",
+        "accuratePropertyClass": 3,
+        "mainPhotoId": 264954573,
+        "checkinDate": "2024-10-22",
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        },
+        "reviewCount": 2200,
+        "blockIds": [
+            "252450804_243680111_3_0_0"
+        ],
+        "latitude": 51.5170174,
+        "optOutFromGalleryChanges": 1,
+        "position": 30,
+        "countryCode": "gb",
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "23:30"
+        },
+        "qualityClass": 0,
+        "propertyClass": 3,
+        "id": 2524508,
+        "longitude": -0.0600828999999976,
+        "reviewScore": 7.4,
+        "checkoutDate": "2024-10-25",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [
+                {
+                    "variant": "constructive",
+                    "identifier": "Mobile Rate",
+                    "text": "Precio solo para m\u00f3vil",
+                    "explanation": "Precio solo para m\u00f3vil"
+                }
+            ],
+            "grossPrice": {
+                "amountRounded": "\u20ac\u00a0425",
+                "currency": "EUR",
+                "value": 424.8164013337
+            },
+            "taxExceptions": [],
+            "strikethroughPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0519",
+                "value": 518.69841264
+            }
+        },
+        "wishlistName": "Londres"
+    },
+    {
+        "checkinDate": "2024-10-22",
+        "mainPhotoId": 373996226,
+        "accuratePropertyClass": 4,
+        "name": "Aloft London Excel",
+        "rankingPosition": 11,
+        "reviewScoreWord": "Muy bien",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/373996226.jpg?k=66105663f9ba5946ddb22ba6c678e438df9b4507aa5fe1787279f1e2e2089e6d&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889,
+        "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+                "value": 492.2832157,
+                "amountRounded": "\u20ac\u00a0492",
+                "currency": "EUR"
+            },
+            "benefitBadges": []
+        },
+        "isPreferred": true,
+        "wishlistName": "Londres",
+        "id": 328060,
+        "propertyClass": 4,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.4,
+        "longitude": 0.0352442264556885,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+        },
+        "countryCode": "gb",
+        "position": 31,
+        "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+        },
+        "latitude": 51.5083150919203,
+        "optOutFromGalleryChanges": 1,
+        "blockIds": [
+            "32806004_94412804_0_2_0"
+        ],
+        "reviewCount": 4951
+    },
+    {
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/311033461.jpg?k=4f5ef52280a7f6e97d311618b1a560bdbe0b94fe2201d97f81bb78e710de46d4&o="
+        ],
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 12,
+        "ufi": -2601889,
+        "currency": "GBP",
+        "checkinDate": "2024-10-22",
+        "accuratePropertyClass": 0,
+        "mainPhotoId": 311033461,
+        "name": "Charlotte Guest House",
+        "countryCode": "gb",
+        "position": 32,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "23:30",
+            "fromTime": "14:00"
+        },
+        "reviewCount": 5013,
+        "latitude": 51.5488603544824,
+        "optOutFromGalleryChanges": 1,
+        "blockIds": [
+            "23764901_93354824_2_0_0"
+        ],
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        },
+        "wishlistName": "Londres",
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "taxExceptions": [],
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0357",
+                "value": 356.60515869
+            }
+        },
+        "isPreferred": true,
+        "longitude": -0.192326456308365,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.2,
+        "propertyClass": 0,
+        "id": 237649
+    },
+    {
+        "checkinDate": "2024-10-22",
+        "name": "Eurotraveller Hotel- Express (Elephant & Castle)",
+        "accuratePropertyClass": 3,
+        "mainPhotoId": 475277188,
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 13,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/475277188.jpg?k=127e0fee12273ef8bf0c7b9ae0b19cec7f0ee47c167b3304c2d8cfaa42b5a8fa&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889,
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "grossPrice": {
+                "value": 436.6290559831,
+                "amountRounded": "\u20ac\u00a0437",
+                "currency": "EUR"
+            },
+            "taxExceptions": []
+        },
+        "wishlistName": "Londres",
+        "propertyClass": 3,
+        "id": 231388,
+        "longitude": -0.097728967666626,
+        "reviewScore": 7.9,
+        "checkoutDate": "2024-10-25",
+        "countryCode": "gb",
+        "position": 33,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "14:00"
+        },
+        "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "11:00"
+        },
+        "reviewCount": 755,
+        "blockIds": [
+            "115955_0_2_0_0"
+        ],
+        "latitude": 51.4899445439991,
+        "optOutFromGalleryChanges": 0
+    },
+    {
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/369612332.jpg?k=7fb4e1f30b49bf6894c74ffec0e357ea92e3ad42ed94e8ba7e4ed5fb8a257305&o="
+        ],
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 14,
+        "name": "Camden Apartments",
+        "mainPhotoId": 369612332,
+        "accuratePropertyClass": 0,
+        "checkinDate": "2024-10-22",
+        "reviewCount": 743,
+        "blockIds": [
+            "563424904_212637942_3_0_0"
+        ],
+        "latitude": 51.5488399224126,
+        "optOutFromGalleryChanges": 1,
+        "checkout": {
+            "fromTime": "00:00",
+            "untilTime": "11:00"
+        },
+        "position": 34,
+        "countryCode": "gb",
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "20:00"
+        },
+        "qualityClass": 3,
+        "longitude": -0.128730610013008,
+        "reviewScore": 7.1,
+        "checkoutDate": "2024-10-25",
+        "propertyClass": 0,
+        "id": 5634249,
+        "wishlistName": "Londres",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [
+                {
+                    "identifier": "Mobile Rate",
+                    "variant": "constructive",
+                    "explanation": "Precio solo para m\u00f3vil",
+                    "text": "Precio solo para m\u00f3vil"
+                }
+            ],
+            "strikethroughPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0566",
+                "value": 566.245767132
+            },
+            "taxExceptions": [],
+            "grossPrice": {
+                "value": 433.1732090929,
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0433"
+            }
+        }
+    },
+    {
+        "currency": "GBP",
+        "ufi": -2601889,
+        "rankingPosition": 15,
+        "reviewScoreWord": "Muy bien",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/382733240.jpg?k=a97c28c91a52e7fe9d8d6513f1adbdac860645ca7f7d0a6f6d1681e06e1ab7e9&o="
+        ],
+        "name": "Best Western Northfields Ealing Hotel",
+        "mainPhotoId": 382733240,
+        "accuratePropertyClass": 3,
+        "checkinDate": "2024-10-22",
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        },
+        "blockIds": [
+            "850053102_0_2_0_0"
+        ],
+        "latitude": 51.498935,
+        "optOutFromGalleryChanges": 0,
+        "reviewCount": 3472,
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+        },
+        "qualityClass": 0,
+        "position": 35,
+        "countryCode": "gb",
+        "id": 8500531,
+        "propertyClass": 3,
+        "reviewScore": 8,
+        "checkoutDate": "2024-10-25",
+        "longitude": -0.314602,
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "taxExceptions": [],
+            "grossPrice": {
+                "amountRounded": "\u20ac\u00a0406",
+                "currency": "EUR",
+                "value": 406.2076884232
+            }
+        },
+        "wishlistName": "Londres"
+    },
+    {
+        "reviewScoreWord": "Muy bien",
+        "rankingPosition": 16,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/463660951.jpg?k=7ad9cc74e7556fa3f804274a40da571696c619e1b91bd929a64ab4d05e01f900&o="
+        ],
+        "currency": "GBP",
+        "ufi": -2601889,
+        "checkinDate": "2024-10-22",
+        "mainPhotoId": 463660951,
+        "accuratePropertyClass": 4,
+        "name": "Moxy London Excel",
+        "countryCode": "gb",
+        "position": 36,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+        },
+        "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+        },
+        "reviewCount": 3844,
+        "optOutFromGalleryChanges": 1,
+        "latitude": 51.50829,
+        "blockIds": [
+            "205600601_274565004_0_2_0"
+        ],
+        "priceBreakdown": {
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0370",
+                "value": 369.81275716
+            },
+            "taxExceptions": [],
+            "benefitBadges": [
+                {
+                    "variant": "constructive",
+                    "identifier": "Late Escape Campaign",
+                    "text": "Oferta de finales de a\u00f1o",
+                    "explanation": "Oferta de finales de a\u00f1o"
+                }
+            ]
+        },
+        "isPreferred": true,
+        "wishlistName": "Londres",
+        "propertyClass": 4,
+        "id": 2056006,
+        "longitude": 0.0422100000000683,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 8.2
+    },
+    {
+        "checkinDate": "2024-10-22",
+        "name": "City Gate Guest House",
+        "mainPhotoId": 504296092,
+        "accuratePropertyClass": 3,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/504296092.jpg?k=d6ed806d43d005b94500d9240eae74cffdceff9a90dc5278a40879520ef1a558&o="
+        ],
+        "rankingPosition": 17,
+        "reviewScoreWord": "Bien",
+        "ufi": -2601889,
+        "currency": "GBP",
+        "wishlistName": "Londres",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "grossPrice": {
+                "currency": "EUR",
+                "amountRounded": "\u20ac\u00a0243",
+                "value": 243.139880925
+            },
+            "taxExceptions": []
+        },
+        "reviewScore": 7.4,
+        "checkoutDate": "2024-10-25",
+        "longitude": -0.0491923487634982,
+        "id": 10749287,
+        "propertyClass": 3,
+        "qualityClass": 0,
+        "checkin": {
+            "fromTime": "14:00",
+            "untilTime": "21:30"
+        },
+        "position": 37,
+        "countryCode": "gb",
+        "blockIds": [
+            "1074928701_380056398_2_0_0"
+        ],
+        "latitude": 51.5250641643184,
+        "optOutFromGalleryChanges": 1,
+        "reviewCount": 855,
+        "checkout": {
+            "untilTime": "11:00",
+            "fromTime": "00:00"
+        }
+    },
+    {
+        "reviewCount": 4052,
+        "latitude": 51.4902501681164,
+        "optOutFromGalleryChanges": 0,
+        "blockIds": [
+            "3527902_0_2_0_0"
+        ],
+        "checkout": {
+            "fromTime": "10:00",
+            "untilTime": "11:00"
+        },
+        "countryCode": "gb",
+        "position": 38,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "23:00",
+            "fromTime": "14:00"
+        },
+        "longitude": -0.08071169257164,
+        "checkoutDate": "2024-10-25",
+        "reviewScore": 7.6,
+        "propertyClass": 3,
+        "id": 35279,
+        "wishlistName": "Londres",
+        "priceBreakdown": {
+            "taxExceptions": [],
+            "grossPrice": {
+                "value": 373.7877024072,
+                "amountRounded": "\u20ac\u00a0374",
+                "currency": "EUR"
+            },
+            "benefitBadges": []
+        },
+        "isPreferred": true,
+        "ufi": -2601889,
+        "currency": "GBP",
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/80267606.jpg?k=0b0d077c02635ba9f11eb61ed9a2c30020be8b711b9a410cb59f49fe1092a93e&o="
+        ],
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 18,
+        "accuratePropertyClass": 3,
+        "mainPhotoId": 80267606,
+        "name": "Eurotraveller Hotel - Premier - Tower Bridge",
+        "checkinDate": "2024-10-22"
+    },
+    {
+        "name": "Crowne Plaza London Ealing, an IHG Hotel",
+        "accuratePropertyClass": 4,
+        "mainPhotoId": 263662264,
+        "checkinDate": "2024-10-22",
+        "currency": "GBP",
+        "ufi": -2601889,
+        "reviewScoreWord": "Bien",
+        "rankingPosition": 19,
+        "photoUrls": [
+            "https://cf.bstatic.com/xdata/images/hotel/square60/263662264.jpg?k=73bf19b5d6cc229a54720c0270b88c62d8c4349f45723bd5c246f4aa8066ee89&o="
+        ],
+        "propertyClass": 4,
+        "id": 34600,
+        "longitude": -0.29412567615509,
+        "reviewScore": 7.8,
+        "checkoutDate": "2024-10-25",
+        "isPreferred": true,
+        "priceBreakdown": {
+            "benefitBadges": [],
+            "grossPrice": {
+                "amountRounded": "\u20ac\u00a0361",
+                "currency": "EUR",
+                "value": 360.7595487542
+            },
+            "taxExceptions": []
+        },
+        "wishlistName": "Londres",
+        "checkout": {
+            "untilTime": "12:00",
+            "fromTime": "00:00"
+        },
+        "reviewCount": 2006,
+        "blockIds": [
+            "3460001_95155633_2_2_0"
+        ],
+        "optOutFromGalleryChanges": 1,
+        "latitude": 51.529581745203,
+        "countryCode": "gb",
+        "position": 39,
+        "qualityClass": 0,
+        "checkin": {
+            "untilTime": "00:00",
+            "fromTime": "15:00"
+        }
+    }
+]
