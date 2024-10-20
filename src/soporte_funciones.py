@@ -278,7 +278,7 @@ def sopa_hellotix(ciudad):
     # Esperar a que el campo de búsqueda esté visible, luego buscar la ciudad y presionar ENTER
     sleep(2)
     try:
-        driver.find_element("css selector", "#input-search").send_keys({"Múnich"})
+        driver.find_element("css selector", "#input-search").send_keys({ciudad})
         sleep(1)
         driver.find_element("css selector", "#input-search").send_keys(Keys.ENTER)
         print(f"Ciudad introducida")
@@ -328,14 +328,21 @@ def mostrar_actividades(sopa_actividades):
         # Extraer el nombre de la actividad
         nombre = actividad.find("span", class_="product-grid__title")
         if nombre:
-            nombre = nombre.get_text(strip=True)
+            nombre = nombre.get_text(strip = True)
         else:
             nombre = np.nan
         
+        # Extraer duración (no consigo extraer duración)
+        #duracion = actividad.select_one("span", class_="#__layout > div > main > div > section > div.page-search__search-grid-desktop-redesign > ul > li:nth-child(3) > a > div.product-grid__info > div.product-grid__description > div > span:nth-child(1)")
+        #if duracion:
+        #    duracion = duracion.get_text(strip = True)
+        #else:
+        #    duracion = np.nan
+
         # Extraer el precio
         precio = actividad.find("div", class_="about-activity-grid-price__new-price")
         if precio:
-            precio = precio.get_text(strip=True)
+            precio = precio.get_text(strip = True)
             # Usamos regex para extraer solo los números
             precio = re.findall(r'\d+', precio)
             precio = float(precio[0]) if precio else np.nan  # Convertir el precio a número si se encuentra
@@ -343,9 +350,9 @@ def mostrar_actividades(sopa_actividades):
             precio = np.nan
 
         # Extraer valoración
-        puntuacion = actividad.find('span', class_='rating-stars__rating')
+        puntuacion = actividad.find("span", class_="rating-stars__rating")
         if puntuacion:
-            puntuacion = puntuacion.get_text(strip=True)
+            puntuacion = puntuacion.get_text(strip = True)
         else:
             puntuacion = np.nan
 
@@ -356,6 +363,7 @@ def mostrar_actividades(sopa_actividades):
         list_actividades.append({
             "Actividad": nombre,
             "Precio": precio * 2 if not np.isnan(precio) else np.nan,  # Multiplicar solo si el precio es un número
+            #"Duración": duracion,
             "Puntuación": puntuacion,
             "Enlace": enlace,
             "Fecha captura": fecha_captura
