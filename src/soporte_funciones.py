@@ -31,7 +31,9 @@ import re
 #- Extraer actividades turísticas mediante web scraping de una página web.
 #- Mostrar la información en DataFrames para fácil visualización.
 
-# Importamos key para APIs
+# Consulta el archivo "Documentación de Soporte APIs y WebScraping" en esta misma carpeta para obtener más información.
+
+# Importamos token para Rapidapi
 key = os.getenv("rapidapi_key")
 
 
@@ -314,7 +316,7 @@ def mostrar_destinos_hoteles():
         input_salida = input("¿Cuándo sería la salida? Por ejemplo: 2024-10-30 ")
         input_pmin = int(input("Introduce el precio mínimo en EUR que te gustaría pagar en total "))
         input_pmax = int(input("Introduce el precio máximo en EUR que te gustaría pagar en total "))
-        print(f"Te mostramos los hoteles disponibles en Londres con entrada el {input_entrada} y salida el {input_salida}, con precio total entre {input_pmin} y {input_pmax}.")
+        print(f"Te mostramos los hoteles disponibles en Londres con entrada el {input_entrada} y salida el {input_salida}, con precio total entre {input_pmin} y {input_pmax} euros.")
         json_response_vuelos = consulta_fechas_hoteles(codigo_ubicacion, input_entrada, input_salida, input_pmin, input_pmax)
         datos_hoteles = json_response_vuelos["data"]
         df_hoteles = mostrar_hoteles(datos_hoteles)
@@ -327,7 +329,7 @@ def mostrar_destinos_hoteles():
         input_salida = input("¿Cuándo sería la salida? Por ejemplo: 2024-10-30 ")
         input_pmin = int(input("Introduce el precio mínimo en EUR que te gustaría pagar en total "))
         input_pmax = int(input("Introduce el precio máximo en EUR que te gustaría pagar en total "))
-        print(f"Te mostramos los hoteles disponibles en Munich con entrada el {input_entrada} y salida el {input_salida}, con precio total entre {input_pmin} y {input_pmax}.")
+        print(f"Te mostramos los hoteles disponibles en Munich con entrada el {input_entrada} y salida el {input_salida}, con precio total entre {input_pmin} y {input_pmax} euros.")
         json_response_vuelos = consulta_fechas_hoteles(codigo_ubicacion, input_entrada, input_salida, input_pmin, input_pmax)
         datos_hoteles = json_response_vuelos["data"]
         df_hoteles = mostrar_hoteles(datos_hoteles)
