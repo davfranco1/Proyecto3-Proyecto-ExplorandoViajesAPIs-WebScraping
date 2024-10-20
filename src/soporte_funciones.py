@@ -1,16 +1,30 @@
 # Importamos liberías
 
-from tqdm import tqdm #Usar barras de progreso
-import requests #Trabajar con APIs
-from time import sleep #Funciones con time
-import pandas as pd
-from IPython.display import display
-import datetime 
-import os
-import dotenv #Uso de tokens
-dotenv.load_dotenv()
+from tqdm import tqdm  # Usar barras de progreso
+import requests  # Trabajar con APIs
+from time import sleep  # Funciones con time (pausas, espera)
+import pandas as pd  # Trabajar con DataFrames para análisis de datos
+import numpy as np # Trabajar con arrays y operaciones matemáticas avanzadas
+from IPython.display import display  # Mostrar salidas de manera más clara en entornos interactivos (como Jupyter)
+import time  # Funciones relacionadas con el tiempo
+import datetime  # Obtener la fecha y hora actuales
+import os  # Interactuar con el sistema operativo, como rutas y variables de entorno
+import dotenv  # Manejo de archivos .env para cargar tokens y claves
+dotenv.load_dotenv()  # Cargar variables de entorno desde un archivo .env
+
+from selenium import webdriver  # Selenium es una herramienta para automatizar la interacción con navegadores web.
+from webdriver_manager.chrome import ChromeDriverManager  # ChromeDriverManager gestiona la instalación del controlador de Chrome.
+from selenium.webdriver.common.by import By # By permite localizar elementos web usando diferentes estrategias de búsqueda (ID, CSS_SELECTOR, XPATH, etc.)
+from selenium.webdriver.common.keys import Keys  # Keys es útil para simular eventos de teclado en Selenium.
+from selenium.webdriver.support.ui import Select  # Select se utiliza para interactuar con elementos <select> en páginas web.
+from selenium.webdriver.support.ui import WebDriverWait  # Esperas explícitas para que ciertos elementos sean visibles o interactuables.
+from selenium.webdriver.support import expected_conditions as EC  # Condiciones esperadas que ayudan a realizar esperas explícitas en Selenium.
+from selenium.common.exceptions import NoSuchElementException  # Excepciones comunes de selenium, como cuando no se encuentra un elemento.
+from bs4 import BeautifulSoup  # Herramienta para extraer y analizar datos de páginas HTML.
+import re
 
 
+# Importamos key para APIs
 key = os.getenv("rapidapi_key")
 
 
@@ -243,5 +257,140 @@ def mostrar_destinos_hoteles():
         display(df_hoteles)
         return df_hoteles
 
+    else:
+        print("No has elegido una opción válida. Se cerrará la consulta.")
+
+
+def sopa_hellotix(ciudad):
+    # Configurar el driver y abrir la URL
+    driver = webdriver.Chrome()
+    url = "https://www.hellotickets.es/"
+    driver.get(url)
+
+    # Esperar a que aparezca el banner de cookies y aceptar cookies
+    sleep(3)
+    try:
+        driver.find_element("css selector", "#__layout > div > div.cookie-banner.cookie-banner-desktop.cookie-banner--v2 > div.cookie-banner__btns-container--v2 > button:nth-child(2)").click()
+        print("Cookies aceptadas")    
+    except Exception as e:
+        print(f"Error al aceptar cookies: {e}")
+
+    # Esperar a que el campo de búsqueda esté visible, luego buscar la ciudad y presionar ENTER
+    sleep(2)
+    try:
+        driver.find_element("css selector", "#input-search").send_keys({"Múnich"})
+        sleep(1)
+        driver.find_element("css selector", "#input-search").send_keys(Keys.ENTER)
+        print(f"Ciudad introducida")
+    except Exception as e:
+        print(f"Error al buscar la ciudad: {e}")
+
+    sleep(5)
+    # Scroll para cargar más contenido
+    print("En página de resultados")
+    hora_inicio = time.time()
+    pausa_scroll = 2  # Pausa entre scrolls
+
+    while time.time() - hora_inicio < 60:  # Scroll 60 segu
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        sleep(pausa_scroll)
+        # Verificar si se ha llegado al final de la página
+        if driver.execute_script("return window.innerHeight + window.scrollY >= document.body.scrollHeight"):
+            print("Se ha llegado al final de la página.")
+            break
+
+    # Obtener el código fuente de la página y analizarlo con BeautifulSoup
+    html = driver.page_source
+    sopa = BeautifulSoup(html, 'html.parser')
+
+    # Extraer actividades
+    sopa_actividades = sopa.find_all('a', class_='product-grid__wrapper')
+
+    # Imprimir confirmación
+    print("Scraping finalizado")
+
+    # Cerrar el navegador
+    driver.quit()
+
+    return sopa_actividades
+
+
+def mostrar_actividades(sopa_actividades):
+
+    fecha_captura = datetime.datetime.now().strftime("%Y-%m-%d")
+
+    # Inicializar la lista fuera del bucle para almacenar todas las actividades
+    list_actividades = []
+
+    # Extraer datos relevantes de cada actividad
+    for actividad in sopa_actividades:
+        
+        # Extraer el nombre de la actividad
+        nombre = actividad.find("span", class_="product-grid__title")
+        if nombre:
+            nombre = nombre.get_text(strip=True)
+        else:
+            nombre = np.nan
+        
+        # Extraer el precio
+        precio = actividad.find("div", class_="about-activity-grid-price__new-price")
+        if precio:
+            precio = precio.get_text(strip=True)
+            # Usamos regex para extraer solo los números
+            precio = re.findall(r'\d+', precio)
+            precio = float(precio[0]) if precio else np.nan  # Convertir el precio a número si se encuentra
+        else:
+            precio = np.nan
+
+        # Extraer valoración
+        puntuacion = actividad.find('span', class_='rating-stars__rating')
+        if puntuacion:
+            puntuacion = puntuacion.get_text(strip=True)
+        else:
+            puntuacion = np.nan
+
+        # Extraer enlace
+        enlace = actividad.get("href", "")
+
+        # Agregar los datos extraídos a la lista
+        list_actividades.append({
+            "Actividad": nombre,
+            "Precio": precio * 2 if not np.isnan(precio) else np.nan,  # Multiplicar solo si el precio es un número
+            "Puntuación": puntuacion,
+            "Enlace": enlace,
+            "Fecha captura": fecha_captura
+        })
+
+    # Crear el DataFrame a partir de la lista de diccionarios
+    df_actividades = pd.DataFrame(list_actividades)
+
+    return df_actividades
+
+
+def mostrar_destinos_actividades():
+    print("Los destinos disponibles son:")
+    print("1. Londres")
+    print("2. Munich")
+    
+    try:
+        input_destino_hotel = int(input("¿Dónde te gustaría viajar?"))
+    except ValueError:
+        print("Por favor, introduce un número válido.")
+        return
+
+    if input_destino_hotel == 1:
+        ciudad = "Londres"
+        print(f"Te mostramos las actividades disponibles en {ciudad}")
+        df_actividades = mostrar_actividades(sopa_hellotix(ciudad))
+        display(df_actividades)
+        return df_actividades
+
+    elif input_destino_hotel == 2:
+        ciudad = "Múnich"
+        print(f"Te mostramos las actividades disponibles en {ciudad}")
+        df_actividades = mostrar_actividades(sopa_hellotix(ciudad))
+        display(df_actividades)
+        return df_actividades
+    
     else:
         print("No has elegido una opción válida. Se cerrará la consulta.")
