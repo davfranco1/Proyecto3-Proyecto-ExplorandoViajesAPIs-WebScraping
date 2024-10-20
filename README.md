@@ -34,6 +34,8 @@ El proyecto está construido de la siguiente manera:
 - **src/**: Carpeta que contiene los archivos `.py`, con las funciones utilizadas en los distintos notebooks.
   - `soporte_funciones.py`
 
+- `.gitignore`: Archivo que contiene los archivos y extensiones que no se subirán a nuestro repositorio, como los archivos .env, con los tokens de las APIs.
+
 
 ## Lenguaje, librerías y temporalidad
 - El proyecto fué elaborado con Python 3.9 y múltiples librerías de soporte. Consulta la parte superior de los notebooks y el `soporte_funciones.py` para conocer las instalaciones necesarias. 
@@ -50,16 +52,16 @@ El proyecto está construido de la siguiente manera:
    ```
 3. Instala las librerías que aparecen en la parte superior de los notebooks y soporte_funciones.py.
    ```sh
-   npm install
+   !pip install nombre_librería
    ```
 4. Con las cuentas que has creado en el paso 1, obtén los tokens para las APIs. Dentro de la carpeta `src`, consulta el archivo `Documentación de Soporte` para más información sobre las APIs que vamos a utilizar, y sus enlaces. Crea dos archivos nuevos .env con tu token. En el caso de Rapiadpi, utilizaremos un mismo token para todas las APIs, pero deberás activarlas primero en su web.
 
-Primero en las carpeta `notebooks`:
+Primero en las carpeta `notebooks` (.env):
    ```js
    token_mapbox = 'token_de_mapbox'
    ```
 
-   Y luego en las carpeta `src`:
+   Y luego en las carpeta `src` (.env):
    ```js
    rapidapi_key = 'token_de_rapidapi'
    ```
