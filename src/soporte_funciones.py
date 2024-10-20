@@ -24,11 +24,29 @@ from bs4 import BeautifulSoup  # Herramienta para extraer y analizar datos de p�
 import re
 
 
+#Este script automatiza la consulta de vuelos, hoteles y actividades utilizando varias APIs y web scraping.
+#Las principales funcionalidades incluyen:
+#- Consultar precios de vuelos en diferentes fechas.
+#- Consultar disponibilidad de hoteles con diferentes rangos de precios.
+#- Extraer actividades turísticas mediante web scraping de una página web.
+#- Mostrar la información en DataFrames para fácil visualización.
+
 # Importamos key para APIs
 key = os.getenv("rapidapi_key")
 
 
 def calendario_precios_vuelos(origen_cal,destino_cal,fecha_inicio_cal):
+    """
+        Consulta un calendario de precios de vuelos para una ruta específica desde el origen al destino en una fecha dada.
+
+        Args:
+            origen_cal (str): Código de la ciudad de origen.
+            destino_cal (str): Código de la ciudad de destino.
+            fecha_inicio_cal (str): Fecha de inicio de la búsqueda de vuelos en formato 'YYYY-MM-DD'.
+
+        Returns:
+            pd.DataFrame: Un DataFrame con los detalles del calendario de precios de vuelos, incluyendo la fecha, el tipo de precio y el precio en EUR.
+        """
 
     url = "https://sky-scrapper.p.rapidapi.com/api/v1/flights/getPriceCalendar"
 
@@ -69,6 +87,18 @@ def calendario_precios_vuelos(origen_cal,destino_cal,fecha_inicio_cal):
 
 
 def consulta_vuelos(fecha_ida, fecha_vuelta, aerop_destino, cod_destino):
+    """
+    Consulta información de vuelos disponibles para un viaje de ida y vuelta entre Madrid y un destino específico.
+
+    Args:
+        fecha_ida (str): Fecha de ida en formato 'YYYY-MM-DD'.
+        fecha_vuelta (str): Fecha de vuelta en formato 'YYYY-MM-DD'.
+        aerop_destino (str): Código IATA del aeropuerto de destino.
+        cod_destino (int): Código del destino en el sistema.
+
+    Returns:
+        dict: Respuesta JSON con los datos de los vuelos.
+    """
 
     url = "https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights"
 
@@ -95,7 +125,17 @@ def consulta_vuelos(fecha_ida, fecha_vuelta, aerop_destino, cod_destino):
     return response.json()
 
 
-def mostrar_vuelos(datos_vuelos):    
+def mostrar_vuelos(datos_vuelos):  
+    """
+    Muestra una lista de vuelos basada en los datos proporcionados, estructurados en un DataFrame.
+
+    Args:
+        datos_vuelos (dict): Diccionario con los datos de los vuelos.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con detalles de los vuelos, como la fecha y hora de salida/llegada, origen, destino, duración, escalas y precio.
+    """
+  
     dicc_vuelos_list = []
     fecha_captura = datetime.datetime.now().strftime("%Y-%m-%d")
 
@@ -129,6 +169,13 @@ def mostrar_vuelos(datos_vuelos):
 
 
 def mostrar_destinos_vuelos():
+    """
+    Solicita al usuario que seleccione un destino de vuelo y muestra los vuelos disponibles para las fechas elegidas.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con la información de los vuelos disponibles para el destino y fechas seleccionados.
+    """
+
     print("Los destinos disponibles son:")
     print("1. Londres Gatwick")
     print("2. Munich")
@@ -169,6 +216,19 @@ def mostrar_destinos_vuelos():
 
 
 def consulta_fechas_hoteles(ubicacion, entrada, salida, precio_min, precio_max):
+    """
+    Consulta la disponibilidad de hoteles en una ubicación específica dentro de un rango de fechas y precios.
+
+    Args:
+        ubicacion (str): Código de la ubicación del hotel.
+        entrada (str): Fecha de entrada en formato 'YYYY-MM-DD'.
+        salida (str): Fecha de salida en formato 'YYYY-MM-DD'.
+        precio_min (int): Precio mínimo en EUR.
+        precio_max (int): Precio máximo en EUR.
+
+    Returns:
+        dict: Respuesta JSON con los datos de los hoteles disponibles.
+    """
 
     url = "https://booking-com18.p.rapidapi.com/stays/search"
 
@@ -197,6 +257,16 @@ def consulta_fechas_hoteles(ubicacion, entrada, salida, precio_min, precio_max):
 
 
 def mostrar_hoteles(datos_hoteles):
+    """
+    Muestra una lista de hoteles disponibles basados en los datos proporcionados, estructurados en un DataFrame.
+
+    Args:
+        datos_hoteles (dict): Diccionario con los datos de los hoteles.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con detalles de los hoteles, como el nombre, fecha de entrada/salida, puntuación, precio, y coordenadas.
+    """
+
     dicc_hoteles_list = []
     fecha_captura = datetime.datetime.now().strftime("%Y-%m-%d")
 
@@ -221,6 +291,13 @@ def mostrar_hoteles(datos_hoteles):
 
 
 def mostrar_destinos_hoteles():
+    """
+    Solicita al usuario que seleccione un destino de hotel y muestra los hoteles disponibles para las fechas y rangos de precios seleccionados.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con la información de los hoteles disponibles para el destino y fechas seleccionados.
+    """
+
     print("Los destinos disponibles son:")
     print("1. Londres")
     print("2. Munich")
@@ -262,6 +339,16 @@ def mostrar_destinos_hoteles():
 
 
 def sopa_hellotix(ciudad):
+    """
+    Realiza un scraping en el sitio web de Hellotickets para obtener actividades disponibles en una ciudad específica.
+
+    Args:
+        ciudad (str): Nombre de la ciudad donde se busca realizar actividades.
+
+    Returns:
+        list: Lista de elementos HTML que contienen información de las actividades disponibles.
+    """
+
     # Configurar el driver y abrir la URL
     driver = webdriver.Chrome()
     url = "https://www.hellotickets.es/"
@@ -316,6 +403,15 @@ def sopa_hellotix(ciudad):
 
 
 def mostrar_actividades(sopa_actividades):
+    """
+    Procesa y muestra una lista de actividades basadas en los datos obtenidos del scraping, estructurados en un DataFrame.
+
+    Args:
+        sopa_actividades (list): Lista de elementos HTML con datos de las actividades obtenidas por scraping.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con detalles de las actividades, como el nombre, precio, puntuación y enlace.
+    """
 
     fecha_captura = datetime.datetime.now().strftime("%Y-%m-%d")
 
@@ -376,6 +472,13 @@ def mostrar_actividades(sopa_actividades):
 
 
 def mostrar_destinos_actividades():
+    """
+    Solicita al usuario que seleccione un destino de actividades y muestra las actividades disponibles en la ciudad seleccionada.
+
+    Returns:
+        pd.DataFrame: Un DataFrame con la información de las actividades disponibles en la ciudad seleccionada.
+    """
+
     print("Los destinos disponibles son:")
     print("1. Londres")
     print("2. Munich")
