@@ -14,7 +14,7 @@ Para recopilar datos precisos y actualizados, empleamos una combinación de mét
 Para superar esta limitación, recurrimos al Web Scraping, una técnica muy útil pero compleja. Utilizamos herramientas como Selenium y Beautiful Soup para extraer datos directamente de los sitios web de proveedores de transporte, hoteles y empresas de actividades turísticas. Esta estrategia nos permite obtener información detallada sobre horarios de transporte, disponibilidad de habitaciones, descripciones de actividades y otros detalles relevantes para nuestros clientes.
 
 
-## Objetivos del Proyecto
+## Objetivo del Proyecto
 
 - **Diseñar la escapada perfecta en pareja para salir de la rutina:** Utilizando las herramientas mencionadas en el planteamiento, realizaremos un EDA que trasladaremos a nuestros clientes, para que tomen la decisión que consideren más acertada para un viaje de fin de semana a Londres o Múnich.
 
@@ -72,10 +72,10 @@ Primero en las carpeta `notebooks` (.env):
    git remote -v # Confirma los cambios
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Hallazgos, Conclusiones y Próximos Pasos
+![imagen](images/munich_resultados.jpg)
+
 - Te invitamos a descargar el [PDF Resultados](https://github.com/davfranco1/Proyecto3-Proyecto-ExplorandoViajesAPIs-WebScraping/blob/main/datos/Resultados.pdf), que resume de manera gráfica el EDA que hemos presentado a nuestros clientes.
 
 - Además, el notebook `2_Análisis de Datos y Visualización_`, contiene explicaciones de los datos y las visualizaciones generadas durante el proyecto.
