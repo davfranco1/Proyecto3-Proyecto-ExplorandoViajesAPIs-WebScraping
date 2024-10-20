@@ -35,13 +35,15 @@ El proyecto está construido de la siguiente manera:
   - `soporte_funciones.py`
 
 
-## Lenguaje y requisitos
-El proyecto fué elaborado con Python 3.9 y de múltiples librerías. Consulta la parte superior de los notebooks y el `soporte_funciones.py` para consultarlas. 
+## Lenguaje, librerías y temporalidad
+- El proyecto fué elaborado con Python 3.9 y múltiples librerías de soporte. Consulta la parte superior de los notebooks y el `soporte_funciones.py` para conocer las instalaciones necesarias. 
+
+- Este proyecto es funcional a fecha 20 de octubre de 2024, sin embargo, dependendiendo de terceros para la captura de datos (APIs y sitios web), los mismos podrían no estar disponibles o requerir de modificaciones para su tratamiento y captura en el futuro.
 
 
 ## Instalación
 
-1. Consigue tokens gratuitos en [Rapidapi](https://rapidapi.com) y [Mapbox](https://mapbox.com) (tendrás que registrar un método de pago).
+1. Crea una cuenta gratuita en [Rapidapi](https://rapidapi.com) y en [Mapbox](https://mapbox.com) (tendrás que registrar un método de pago). Consulta el paso 4.
 2. Clona el repositorio
    ```sh
    git clone https://github.com/davfranco1/Proyecto3-Proyecto-ExplorandoViajesAPIs-WebScraping.git
@@ -50,15 +52,16 @@ El proyecto fué elaborado con Python 3.9 y de múltiples librerías. Consulta l
    ```sh
    npm install
    ```
-4. Crea dos archivos nuevos .env con tu token. En el caso de Rapiadpi, utilizaremos un mismo token para todas las APIs, pero deberás activarlas primero en su web. Dentro de la carpeta `src`, consulta el archivo `Documentación de Soporte` para más información.
-Primero en las carpeta `notebooks`:.
+4. Con las cuentas que has creado en el paso 1, obtén los tokens para las APIs. Dentro de la carpeta `src`, consulta el archivo `Documentación de Soporte` para más información sobre las APIs que vamos a utilizar, y sus enlaces. Crea dos archivos nuevos .env con tu token. En el caso de Rapiadpi, utilizaremos un mismo token para todas las APIs, pero deberás activarlas primero en su web.
+
+Primero en las carpeta `notebooks`:
    ```js
-   const token_mapbox = 'token_de_mapbox';
+   token_mapbox = 'token_de_mapbox'
    ```
 
-   Y luego en las carpeta `src`:.
+   Y luego en las carpeta `src`:
    ```js
-   const rapidapi_key = 'token_de_rapidapi';
+   rapidapi_key = 'token_de_rapidapi'
    ```
 
 5. Cambia la URL del repositorio remoto para evitar cambios al original.
