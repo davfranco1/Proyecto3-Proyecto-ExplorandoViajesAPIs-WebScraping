@@ -78,7 +78,8 @@ Primero en las carpeta `notebooks` (.env):
 
 - Te invitamos a descargar el [PDF Resultados](https://github.com/davfranco1/Proyecto3-Proyecto-ExplorandoViajesAPIs-WebScraping/blob/main/datos/Resultados.pdf), que resume de manera gráfica el EDA que hemos presentado a nuestros clientes.
 
-- Además, el notebook `2_Análisis de Datos y Visualización`, contiene explicaciones de los datos y las visualizaciones generadas durante el proyecto.
+- Además, el notebook [2_Análisis de Datos y Visualización](https://github.com/davfranco1/Proyecto3-Proyecto-ExplorandoViajesAPIs-WebScraping/blob/main/notebooks/2_Análisis%20de%20Datos%20y%20Visualización.ipynb), contiene explicaciones de los datos y las visualizaciones generadas durante el proyecto.
+
 
 
 ## Autor
