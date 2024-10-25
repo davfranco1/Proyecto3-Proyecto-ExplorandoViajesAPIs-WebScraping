@@ -249,7 +249,7 @@ def consulta_fechas_hoteles(ubicacion, entrada, salida, precio_min, precio_max):
                    "currencyCode":"EUR"}
 
     headers = {
-        "x-rapidapi-key": "e9d53ce8f2msh50c48f79aa0b1b1p1674b7jsn7a3fd4b9a409",
+        "x-rapidapi-key": key,
         "x-rapidapi-host": "booking-com18.p.rapidapi.com"
     }
 
